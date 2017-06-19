@@ -72,3 +72,11 @@ class Version():
         self.rev = "+"
 
 version = Version()
+
+from browser import window
+
+gamejs = window.gamejs
+
+def preload(resources):
+    gamejs.preload(resources)
+    

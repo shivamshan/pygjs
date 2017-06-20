@@ -43,4 +43,10 @@ Basically, I get all the benefits of pygame with all the benefits of the browser
 I run a personal blog devoted to all sorts of things at http://wunk.me/  If you want to find out more about me, that's the place to do it.
 I also have a page dedicated to this project at http://wunk.me/programming-projects/pygjs
 
-I also have a patreon -ahem-, so if you find this utility and potential future ones like it useful go here: https://www.patreon.com/asherwolfstein to support me.  Thanks!
+If you appreciate my programming consider supporting me at the following links:
+* [KO-FI](http://ko-fi.com/asherwolfstein)
+* [Patreon](https://www.patreon.com/asherwolfstein)
+
+For further information on the author please visit:
+* [My Beautiful Life - And All It's Friends](http://wunk.me/ "Personal Blog")
+* [PYGJS Homepage](http://wunk.me/programming-projects/pygjs/)

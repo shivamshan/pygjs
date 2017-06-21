@@ -156,7 +156,7 @@ class Surface():
             self.clip = rect
             
         context = self.surface.context
-        r = context.rect(self.clip.left, self.clip.top, self.clip.width, rself.clip.height)
+        r = context.rect(self.clip.left, self.clip.top, self.clip.width, self.clip.height)
         context.clip(r, 'nonzero')
     
     def get_size(self):
@@ -170,10 +170,10 @@ class Surface():
         dimensions = self.surface.getSize()
         return dimensions[1]
     
-    def get_rect(**kwargs):
+    def get_rect(self, **kwargs):
         dimensions = self.surface.getSize()
         ret = Rect(0, 0, dimensions[0], dimensions[1])
-        for key, value in kwargs.iteritems():
+        for key, value in kwargs.items():
             setattr(ret, key, value)
         return ret
     

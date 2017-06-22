@@ -14,7 +14,9 @@ My GameJS implementation here is MODIFIED extensively, you can find out more inf
 
 I browserify gamebridge.js and output it to game.js like so:
 
+```
 browserify ./gamebridge.js -o game.js
+```
 
 I then include game.js as a script on my HTML file
 
@@ -29,6 +31,26 @@ You can also import pygjs which currently provides python wrappers to the rest o
 This is NOT an emulator.  In order for your pygame games to run in this environment you WILL have to reprogram parts of it.  FOr instance for images and fonts you'll have to preload these before using them.  You'll also have to modify your game loop probably (as a while forever loop would block everything).
 
 If you're willing to make some modifications, you can program in Python using pygame in the browser (or nodewebkit)
+
+## Running Locally
+
+Brython uses XMLHttpRequest to load python modules, which works when using a browser to access a webserver, or when using nodewebkit.  This unfortunately doesn't work on most browsers when you open index.html locally (file://)
+
+To get around this you have to generate a distribution build by doing the following (NOT FOOLPROOF):
+
+You can make a brython_modules.js file that includes ALL the modules your code requires by:
+
+1. create a file .bundle-include that lists each module on a separate line (including submodules)
+2. install brython using pip, and then execute python -m brython --modules
+3. reference brython_modules.js (the generated file) instead of brython_stdlib.js
+
+This should prevent brython from having to execute the XHRs
+
+You can easily generate .bundle-include with all the current modules loaded into an application by:
+
+1. Run the application in the browser/nodewebkit
+2. At the console type `__BRYTHON__.imports()`
+3. In the new window, copy the textarea contents and paste it into .bundle-include
 
 # WHY?
 

@@ -114,7 +114,7 @@ exports.onMouseWheel = function(callback, scope) {
   _CALLBACKS.push({
     callback: callback,
     scope: scope,
-    type: exports.MNOUSE_WHEEL
+    type: exports.MOUSE_WHEEL
   });
 }
 

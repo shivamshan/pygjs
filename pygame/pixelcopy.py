@@ -20,7 +20,7 @@ def surface_to_array(array, surface, kind='P', opaque=255, clear=0):
     elif kind == 'C' or kind == 'RGB':
         surfarray.arrayCopy(array, "c")
 
-def array_to_surface(surface, array. from3d=False):
+def array_to_surface(surface, array, from3d=False):
     dimensions = surface.get_size()
     newSurface = surfarray.make_surface(array, dimensions, from3d)
     surface.blit(newSurface)

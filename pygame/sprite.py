@@ -1,5 +1,5 @@
 from browser import window
-import pygame
+from pygame.display import get_surface
 from .rect import Rect
 from operator import truth
 from pygame.time import get_ticks
@@ -1182,7 +1182,7 @@ class LayeredDirty(LayeredUpdates):
 
         """
         if screen_rect is None:
-            self._clip = pygame.display.get_surface().get_rect()
+            self._clip = get_surface().get_rect()
         else:
             self._clip = screen_rect
         self._use_update = False

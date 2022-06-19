@@ -1,9 +1,3 @@
-# ABANDONED
-
-This software package is an interesting excursion into a hybrid system that solves a quirky problem. Unfortunately in its current version there exist a few bugs, but more unnerving is that it is currently abandoned. The author has lost interest in relying on something like PyGame to create a game engine from the ground up, and so here it resides as a small proof-of-concept and archive. Thank you for all your support, and if you desire, please continue on from my codebase with your own vision.
-
-Asher
-
 # pygjs
 
 PyGame in NodeWebkit/Browser

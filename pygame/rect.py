@@ -26,7 +26,7 @@ class Rect():
         return self.rect.y
     
     def set_y(self, y):
-        self.rect.x = y
+        self.rect.y = y
     
     def get_top(self):
         return self.rect.top

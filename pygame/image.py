@@ -1,4 +1,5 @@
 from browser import window
+from .surface import Surface
 
 gamejs = window.gamejs
 

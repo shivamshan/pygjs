@@ -26,7 +26,7 @@ class Surface():
     def blit(self, source, dest=Rect(), area=None, special_flags=0):
         if not area:
             area = [0,0]
-        self.surface.blit(source.surface, dest.rect, area, special_flags)
+        self.surface.blit(source.surface, dest, area, special_flags)
     
     def convert(self):
         pass
